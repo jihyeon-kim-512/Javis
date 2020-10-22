@@ -81,8 +81,8 @@ service = build('calendar', 'v3', credentials=gcreds)
 # https://developers.kakao.com/docs/restapi/tool
 # 해당 사이트에서 로그인 후 'Access token'을 얻어오세요
 # 앱 페이지에서 REST API KEY 를 얻어오세요
-access_token = "5HloZOo7Wp2IHj4o-uNOmyIUFyRUkpYQYjw3PgopcJ4AAAFzkwLcAw"
-rest_key =  "dbbadbe804f295f7da88212ccff2f83f"
+access_token = ""
+rest_key =  ""
 kcreds = get_kakao_auth(access_token, rest_key)
 
 # 카카오 서비스에 인증 키를 보낼 때 쓰는 headers
@@ -93,8 +93,8 @@ kheaders = {
 # 1-3. 네이버 인증
 # https://developers.naver.com/apps
 # 해당 사이트에서 로그인 후 "Cliend ID"와 "Client Secret"을 얻어오세요
-client_id = "vH30MBZOOyXkZtIWlPkt"
-client_secret = "H85Mc72H_R"
+client_id = ""
+client_secret = ""
 ncreds = get_naver_auth(client_id, client_secret)
 
 # 네이버 서비스에 인증키를 보낼 때 쓰는 headers
