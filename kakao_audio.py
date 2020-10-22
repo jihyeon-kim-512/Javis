@@ -29,8 +29,8 @@ from googleapiclient.discovery import build
 def get_google_auth():
     # 구글 OAuth 클라이언트 ID Json 파일
     directory = 'auth'
-    creds_filename = 'client_secret_422511621553-ner5kv45f8o7eec66cl527jf7l6h5j2k.apps.googleusercontent.com.json'
-    token_filename = 'gtoken.pickle'
+    creds_filename = ''
+    token_filename = ''
     
     # 캘린더에서 사용할 권한
     SCOPES = ['https://www.googleapis.com/auth/calendar']
@@ -486,12 +486,12 @@ def get_naver_news_top3():
 
 kakao_speech_url = "https://kakaoi-newtone-openapi.kakao.com/v1/recognize"
 
-rest_api_key = 'dbbadbe804f295f7da88212ccff2f83f'
+rest_api_key = ''
 
 headers = {
     "Content-Type": "application/octet-stream",
     "X-DSS-Service": "DICTATION",
-    "Authorization": "KakaoAK " + "dbbadbe804f295f7da88212ccff2f83f",
+    "Authorization": "KakaoAK " + "/*rest_api_key*/",
 }
 
 #with open('heykakao.wav', 'rb') as fp:
